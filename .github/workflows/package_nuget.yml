@@ -19,8 +19,10 @@ jobs:
       with:
         dotnet-version: '6.0.x'
 
-    - name: Restore dependencies
-      run: dotnet restore Comportamiento.sln
+    - name: Restore dependencies ATM
+      run: dotnet restore ATM/ATM.sln
+    - name: Restore dependencies Payment
+      run: dotnet restore Payment/Payment.sln
 
     - name: Run tests
       run: dotnet test --collect:"XPlat Code Coverage"
