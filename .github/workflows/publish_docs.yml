@@ -20,9 +20,9 @@ jobs:
         dotnet-version: '6.0.x'
 
     - name: Install DocFx
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y docfx
+      run: dotnet tool install -g docfx
+    - name: Add .NET tools to PATH
+      run: echo "::add-path::$(dotnet --tool-path)"
 
     - name: Build documentation
       run: |

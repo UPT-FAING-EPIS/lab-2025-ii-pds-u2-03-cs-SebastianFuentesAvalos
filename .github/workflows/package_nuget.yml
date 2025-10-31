@@ -26,7 +26,7 @@ jobs:
       run: dotnet test --collect:"XPlat Code Coverage"
 
     - name: Analyze with SonarCloud
-      uses: sonarsource/sonarcloud-github-action@v1.10
+      uses: sonarsource/sonarcloud-github-action@v1.9
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
