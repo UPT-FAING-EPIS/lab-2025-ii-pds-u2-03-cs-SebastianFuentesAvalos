@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Dise&#241;o del Sistema ATM </title>
+      <title>Diagrama de Clases - Sistema ATM (Patr&#243;n Command) </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Dise&#241;o del Sistema ATM ">
+      <meta name="title" content="Diagrama de Clases - Sistema ATM (Patr&#243;n Command) ">
     
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -60,34 +60,56 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="diseño-del-sistema-atm">Diseño del Sistema ATM</h1>
+<h1 id="diagrama-de-clases---sistema-atm-patrón-command">Diagrama de Clases - Sistema ATM (Patrón Command)</h1>
 
-<p>Ver diagrama de clases generado automáticamente: <a href="atm.mermaid.html">atm.mermaid.md</a></p>
 <pre><code class="lang-mermaid">classDiagram
-
-class Account
-Account : +Int AccountNumber
-Account : +Decimal AccountBalance
-Account : +Withdraw() Void
-Account : +Deposit() Void
-
-class ATM
-ATM : +Action() Void
-
-class DepositCommand
-DepositCommand : +Execute() Void
-
-class ICommand
-ICommand : +Execute() Void
-
-class WithdrawCommand
-WithdrawCommand : +Execute() Void
-
-
-ICommand &lt;|.. DepositCommand
-ICommand &lt;|.. WithdrawCommand
-
+    class ICommand {
+        &lt;&lt;interface&gt;&gt;
+        +Execute() void
+    }
+    
+    class DepositCommand {
+        -account: Account
+        -amount: decimal
+        +DepositCommand(account: Account, amount: decimal)
+        +Execute() void
+    }
+    
+    class WithdrawCommand {
+        -account: Account
+        -amount: decimal
+        +WithdrawCommand(account: Account, amount: decimal)
+        +Execute() void
+    }
+    
+    class Account {
+        +AccountNumber: int
+        +AccountBalance: decimal
+        +Withdraw(amount: decimal) void
+        +Deposit(amount: decimal) void
+    }
+    
+    class ATM {
+        -commands: List~ICommand~
+        +Action(command: ICommand) void
+        +ExecuteCommands() void
+    }
+    
+    ICommand &lt;|.. DepositCommand : implements
+    ICommand &lt;|.. WithdrawCommand : implements
+    DepositCommand --&gt; Account : operates on
+    WithdrawCommand --&gt; Account : operates on
+    ATM --&gt; ICommand : executes
 </code></pre>
+<h2 id="descripción-del-patrón-command">Descripción del Patrón Command</h2>
+<p>El patrón Command encapsula una solicitud como un objeto, permitiendo parametrizar clientes con diferentes solicitudes, colas o solicitudes de registro.</p>
+<h3 id="componentes">Componentes:</h3>
+<ul>
+<li><strong>ICommand</strong>: Interfaz común para todos los comandos</li>
+<li><strong>Comandos Concretos</strong>: DepositCommand, WithdrawCommand</li>
+<li><strong>Account</strong>: Receptor que sabe cómo realizar las operaciones</li>
+<li><strong>ATM</strong>: Invocador que ejecuta los comandos</li>
+</ul>
 
 </article>
           </div>
@@ -97,7 +119,7 @@ ICommand &lt;|.. WithdrawCommand
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos/blob/main/ATM/disenio.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos/blob/main/ATM/atm.mermaid.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

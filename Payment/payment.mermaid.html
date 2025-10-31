@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Dise&#241;o del Sistema ATM </title>
+      <title>Diagrama de Clases - Sistema de Pago (Patr&#243;n Strategy) </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Dise&#241;o del Sistema ATM ">
+      <meta name="title" content="Diagrama de Clases - Sistema de Pago (Patr&#243;n Strategy) ">
     
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -60,34 +60,56 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="diseño-del-sistema-atm">Diseño del Sistema ATM</h1>
+<h1 id="diagrama-de-clases---sistema-de-pago-patrón-strategy">Diagrama de Clases - Sistema de Pago (Patrón Strategy)</h1>
 
-<p>Ver diagrama de clases generado automáticamente: <a href="atm.mermaid.html">atm.mermaid.md</a></p>
 <pre><code class="lang-mermaid">classDiagram
-
-class Account
-Account : +Int AccountNumber
-Account : +Decimal AccountBalance
-Account : +Withdraw() Void
-Account : +Deposit() Void
-
-class ATM
-ATM : +Action() Void
-
-class DepositCommand
-DepositCommand : +Execute() Void
-
-class ICommand
-ICommand : +Execute() Void
-
-class WithdrawCommand
-WithdrawCommand : +Execute() Void
-
-
-ICommand &lt;|.. DepositCommand
-ICommand &lt;|.. WithdrawCommand
-
+    class IPaymentStrategy {
+        &lt;&lt;interface&gt;&gt;
+        +Pay(amount: decimal) bool
+    }
+    
+    class CashPaymentStrategy {
+        +Pay(amount: decimal) bool
+    }
+    
+    class CreditCardPaymentStrategy {
+        -cardNumber: string
+        -expiryDate: string
+        +Pay(amount: decimal) bool
+    }
+    
+    class DebitCardPaymentStrategy {
+        -cardNumber: string
+        -pin: string
+        +Pay(amount: decimal) bool
+    }
+    
+    class PaymentContext {
+        -strategy: IPaymentStrategy
+        +SetPaymentStrategy(strategy: IPaymentStrategy) void
+        +Pay(amount: decimal) bool
+    }
+    
+    class PaymentService {
+        -context: PaymentContext
+        +ProcessPayment(amount: decimal, strategy: IPaymentStrategy) bool
+    }
+    
+    IPaymentStrategy &lt;|.. CashPaymentStrategy : implements
+    IPaymentStrategy &lt;|.. CreditCardPaymentStrategy : implements
+    IPaymentStrategy &lt;|.. DebitCardPaymentStrategy : implements
+    PaymentContext --&gt; IPaymentStrategy : uses
+    PaymentService --&gt; PaymentContext : uses
 </code></pre>
+<h2 id="descripción-del-patrón-strategy">Descripción del Patrón Strategy</h2>
+<p>El patrón Strategy permite seleccionar algoritmos sobre la marcha. En este caso, diferentes estrategias de pago (efectivo, tarjeta de crédito, débito) pueden ser intercambiadas dinámicamente.</p>
+<h3 id="componentes">Componentes:</h3>
+<ul>
+<li><strong>IPaymentStrategy</strong>: Interfaz común para todas las estrategias</li>
+<li><strong>Estrategias Concretas</strong>: CashPaymentStrategy, CreditCardPaymentStrategy, DebitCardPaymentStrategy</li>
+<li><strong>PaymentContext</strong>: Mantiene una referencia a la estrategia y delega el trabajo</li>
+<li><strong>PaymentService</strong>: Cliente que usa el contexto</li>
+</ul>
 
 </article>
           </div>
@@ -97,7 +119,7 @@ ICommand &lt;|.. WithdrawCommand
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos/blob/main/ATM/disenio.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos/blob/main/Payment/payment.mermaid.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

@@ -14,6 +14,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "ATM/atm.mermaid.md",
+      "output": {
+        ".html": {
+          "relative_path": "ATM/atm.mermaid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "ATM/disenio.md",
       "output": {
         ".html": {
@@ -34,6 +44,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Comportamiento/comportamiento.mermaid.md",
+      "output": {
+        ".html": {
+          "relative_path": "Comportamiento/comportamiento.mermaid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Comportamiento/disenio.md",
+      "output": {
+        ".html": {
+          "relative_path": "Comportamiento/disenio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Payment/disenio.md",
       "output": {
         ".html": {
@@ -48,6 +78,16 @@
       "output": {
         ".html": {
           "relative_path": "Payment/payment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Payment/payment.mermaid.md",
+      "output": {
+        ".html": {
+          "relative_path": "Payment/payment.mermaid.html"
         }
       },
       "version": ""
