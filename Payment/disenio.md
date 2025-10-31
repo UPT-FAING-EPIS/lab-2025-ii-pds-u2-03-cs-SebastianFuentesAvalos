@@ -1,3 +1,7 @@
+# Diseño del Sistema de Pago
+
+Ver diagrama de clases generado automáticamente: [payment.mermaid.md](payment.mermaid.md)
+
 ```mermaid
 classDiagram
 

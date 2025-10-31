@@ -1,3 +1,7 @@
+# Diseño del Sistema ATM
+
+Ver diagrama de clases generado automáticamente: [atm.mermaid.md](atm.mermaid.md)
+
 ```mermaid
 classDiagram
 
