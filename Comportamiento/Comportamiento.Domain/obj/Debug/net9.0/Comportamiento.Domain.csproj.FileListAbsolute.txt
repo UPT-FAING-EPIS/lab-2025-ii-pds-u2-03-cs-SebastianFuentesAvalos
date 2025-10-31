@@ -1,0 +1,12 @@
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Comportamiento\Comportamiento.Domain\bin\Debug\net9.0\Comportamiento.Domain.deps.json
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Comportamiento\Comportamiento.Domain\bin\Debug\net9.0\Comportamiento.Domain.dll
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Comportamiento\Comportamiento.Domain\bin\Debug\net9.0\Comportamiento.Domain.pdb
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.AssemblyInfoInputs.cache
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.AssemblyInfo.cs
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.csproj.CoreCompileInputs.cache
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.sourcelink.json
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.dll
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\refint\Comportamiento.Domain.dll
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.pdb
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\ref\Comportamiento.Domain.dll

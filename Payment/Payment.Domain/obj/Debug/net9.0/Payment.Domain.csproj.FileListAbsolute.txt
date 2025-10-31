@@ -1,0 +1,12 @@
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Payment\Payment.Domain\bin\Debug\net9.0\Payment.Domain.deps.json
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Payment\Payment.Domain\bin\Debug\net9.0\Payment.Domain.dll
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Payment\Payment.Domain\bin\Debug\net9.0\Payment.Domain.pdb
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Payment\Payment.Domain\obj\Debug\net9.0\Payment.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Payment\Payment.Domain\obj\Debug\net9.0\Payment.Domain.AssemblyInfoInputs.cache
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Payment\Payment.Domain\obj\Debug\net9.0\Payment.Domain.AssemblyInfo.cs
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Payment\Payment.Domain\obj\Debug\net9.0\Payment.Domain.csproj.CoreCompileInputs.cache
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Payment\Payment.Domain\obj\Debug\net9.0\Payment.Domain.sourcelink.json
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Payment\Payment.Domain\obj\Debug\net9.0\Payment.Domain.dll
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Payment\Payment.Domain\obj\Debug\net9.0\refint\Payment.Domain.dll
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Payment\Payment.Domain\obj\Debug\net9.0\Payment.Domain.pdb
+D:\UPT_CICLOS\CICLO VIII\Patrones\labs_Unidad2\lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos\Payment\Payment.Domain\obj\Debug\net9.0\ref\Payment.Domain.dll
