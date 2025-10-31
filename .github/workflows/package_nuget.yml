@@ -54,8 +54,7 @@ jobs:
     - name: Configure NuGet Source
       run: |
         dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GHTOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
-        dotnet nuget setapikey ${{ secrets.GHTOKEN }} --source github
 
     - name: Publish NuGet packages
       run: |
-        dotnet nuget push ./nugets/*.nupkg --source github --skip-duplicate
+        dotnet nuget push ./nugets/*.nupkg --source github --api-key ${{ secrets.GHTOKEN }} --skip-duplicate
