@@ -51,10 +51,23 @@ jobs:
         dotnet pack ATM/ATM.Domain/ATM.Domain.csproj -o ./nugets
         dotnet pack Comportamiento/Comportamiento.Domain/Comportamiento.Domain.csproj -o ./nugets
 
-    - name: Configure NuGet Source
+    - name: Create NuGet.config
       run: |
-        dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GHTOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
+        cat > NuGet.config << 'EOF'
+        <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <packageSources>
+            <add key="github" value="https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" />
+          </packageSources>
+          <packageSourceCredentials>
+            <github>
+              <add key="Username" value="${{ github.actor }}" />
+              <add key="ClearTextPassword" value="${{ secrets.GITHUB_TOKEN }}" />
+            </github>
+          </packageSourceCredentials>
+        </configuration>
+        EOF
 
     - name: Publish NuGet packages
       run: |
-        dotnet nuget push ./nugets/*.nupkg --source github --api-key ${{ secrets.GHTOKEN }} --skip-duplicate
+        dotnet nuget push ./nugets/*.nupkg --source github --skip-duplicate
