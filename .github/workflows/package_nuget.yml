@@ -9,6 +9,9 @@ on:
 jobs:
   test-and-package:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
 
     steps:
     - name: Checkout repository
@@ -50,4 +53,4 @@ jobs:
 
     - name: Publish NuGet packages
       run: |
-        dotnet nuget push ./nugets/*.nupkg -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+        dotnet nuget push ./nugets/*.nupkg -k ${{ secrets.GHTOKEN }} -s https://nuget.pkg.github.com/${{ github.repository }}/index.json
