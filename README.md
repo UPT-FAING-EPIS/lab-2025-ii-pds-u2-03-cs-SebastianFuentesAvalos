@@ -4,7 +4,7 @@
 
 ---
 
-# Alumno: Sebastian Nicolas Fuentes Avalos
+# Alumno: Sebastián Nicolas Fuentes Avalos
 
 ---
 
