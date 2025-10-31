@@ -22,7 +22,8 @@ jobs:
     - name: Install DocFx
       run: dotnet tool install -g docfx
     - name: Add .NET tools to PATH
-      run: echo "::add-path::$(dotnet --tool-path)"
+      shell: bash
+      run: echo "export PATH=\"$PATH:$(dotnet --tool-path)\"" >> $GITHUB_ENV
 
     - name: Build documentation
       run: |
