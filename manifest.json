@@ -1,0 +1,434 @@
+{
+  "source_base_path": "/home/runner/work/lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos/lab-2025-ii-pds-u2-03-cs-SebastianFuentesAvalos",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ATM/atm.md",
+      "output": {
+        ".html": {
+          "relative_path": "ATM/atm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ATM/disenio.md",
+      "output": {
+        ".html": {
+          "relative_path": "ATM/disenio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Comportamiento/comportamiento.md",
+      "output": {
+        ".html": {
+          "relative_path": "Comportamiento/comportamiento.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Payment/disenio.md",
+      "output": {
+        ".html": {
+          "relative_path": "Payment/disenio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Payment/payment.md",
+      "output": {
+        ".html": {
+          "relative_path": "Payment/payment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.ATM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.ATM.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.ATM",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.Account.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.Account",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.DepositCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.DepositCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.DepositCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.ICommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.ICommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.ICommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.Tests.ATMTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.Tests.ATMTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.Tests.ATMTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.WithdrawCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.WithdrawCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.WithdrawCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.ConcreteObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.ConcreteObserver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain.ConcreteObserver",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.ConcreteSubject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.ConcreteSubject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain.ConcreteSubject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.IObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.IObserver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain.IObserver",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.ISubject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.ISubject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain.ISubject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.Tests.ObserverTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.Tests.ObserverTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain.Tests.ObserverTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.CashPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.CashPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.CashPaymentStrategy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.CreditCardPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.CreditCardPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.CreditCardPaymentStrategy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.DebitCardPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.DebitCardPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.DebitCardPaymentStrategy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.IPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.IPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.IPaymentStrategy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.PaymentContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.PaymentContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.PaymentContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.PaymentService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.PaymentService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.PaymentService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.PaymentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.PaymentType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.PaymentType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.Tests.PaymentTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.Tests.PaymentTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.Tests.PaymentTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
