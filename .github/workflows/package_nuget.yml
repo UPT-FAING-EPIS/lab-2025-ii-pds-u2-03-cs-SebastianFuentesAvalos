@@ -51,6 +51,10 @@ jobs:
         dotnet pack ATM/ATM.Domain/ATM.Domain.csproj -o ./nugets
         dotnet pack Comportamiento/Comportamiento.Domain/Comportamiento.Domain.csproj -o ./nugets
 
+    - name: Add GitHub NuGet Source
+      run: |
+        dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GHTOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
+
     - name: Publish NuGet packages
       run: |
-        dotnet nuget push ./nugets/*.nupkg -k ${{ secrets.GHTOKEN }} -s https://nuget.pkg.github.com/${{ github.repository }}/index.json
+        dotnet nuget push ./nugets/*.nupkg --source "github" --skip-duplicate
