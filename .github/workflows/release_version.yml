@@ -1,7 +1,8 @@
 name: Release Version
 
 on:
-  workflow_dispatch:
+  release:
+    types: [published]
   push:
     tags:
       - "v*"
@@ -19,15 +20,23 @@ jobs:
       with:
         dotnet-version: '6.0.x'
 
+    - name: Restore dependencies
+      run: |
+        dotnet restore Payment/Payment.sln
+        dotnet restore ATM/ATM.sln
+        dotnet restore Comportamiento/Comportamiento.sln
+
     - name: Build projects
       run: |
-        dotnet build Payment.Domain/Payment.Domain.csproj
-        dotnet build ATM.Domain/ATM.Domain.csproj
+        dotnet build Payment/Payment.Domain/Payment.Domain.csproj
+        dotnet build ATM/ATM.Domain/ATM.Domain.csproj
+        dotnet build Comportamiento/Comportamiento.Domain/Comportamiento.Domain.csproj
 
     - name: Create NuGet packages
       run: |
-        dotnet pack Payment.Domain/Payment.Domain.csproj -o ./nugets
-        dotnet pack ATM.Domain/ATM.Domain.csproj -o ./nugets
+        dotnet pack Payment/Payment.Domain/Payment.Domain.csproj -o ./nugets
+        dotnet pack ATM/ATM.Domain/ATM.Domain.csproj -o ./nugets
+        dotnet pack Comportamiento/Comportamiento.Domain/Comportamiento.Domain.csproj -o ./nugets
 
     - name: Upload release assets
       uses: actions/upload-release-asset@v1

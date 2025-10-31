@@ -23,9 +23,15 @@ jobs:
       run: dotnet restore ATM/ATM.sln
     - name: Restore dependencies Payment
       run: dotnet restore Payment/Payment.sln
+    - name: Restore dependencies Comportamiento
+      run: dotnet restore Comportamiento/Comportamiento.sln
 
-    - name: Run tests
-      run: dotnet test --collect:"XPlat Code Coverage"
+    - name: Run tests ATM
+      run: dotnet test ATM/ATM.sln --collect:"XPlat Code Coverage"
+    - name: Run tests Payment
+      run: dotnet test Payment/Payment.sln --collect:"XPlat Code Coverage"
+    - name: Run tests Comportamiento
+      run: dotnet test Comportamiento/Comportamiento.sln --collect:"XPlat Code Coverage"
 
     - name: Analyze with SonarCloud
       uses: sonarsource/sonarcloud-github-action@v1.9
@@ -38,8 +44,9 @@ jobs:
 
     - name: Build NuGet packages
       run: |
-        dotnet pack Payment.Domain/Payment.Domain.csproj -o ./nugets
-        dotnet pack ATM.Domain/ATM.Domain.csproj -o ./nugets
+        dotnet pack Payment/Payment.Domain/Payment.Domain.csproj -o ./nugets
+        dotnet pack ATM/ATM.Domain/ATM.Domain.csproj -o ./nugets
+        dotnet pack Comportamiento/Comportamiento.Domain/Comportamiento.Domain.csproj -o ./nugets
 
     - name: Publish NuGet packages
       run: |

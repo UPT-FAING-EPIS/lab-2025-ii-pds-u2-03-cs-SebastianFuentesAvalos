@@ -22,9 +22,45 @@ jobs:
     - name: Install DocFx
       run: dotnet tool install -g docfx
 
+    - name: Create DocFx configuration
+      run: |
+        mkdir -p docs
+        cat > docfx.json << 'EOF'
+        {
+          "metadata": [
+            {
+              "src": [
+                {
+                  "files": ["**/*.csproj"],
+                  "src": "."
+                }
+              ],
+              "dest": "api"
+            }
+          ],
+          "build": {
+            "content": [
+              {
+                "files": ["api/**.yml", "api/index.md"]
+              },
+              {
+                "files": ["README.md", "**/*.md"],
+                "exclude": ["obj/**", "bin/**"]
+              }
+            ],
+            "resource": [
+              {
+                "files": ["images/**"]
+              }
+            ],
+            "dest": "_site",
+            "template": ["default"]
+          }
+        }
+        EOF
+
     - name: Build documentation
       run: |
-        docfx init
         docfx metadata
         docfx build
 
